@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Airbnb Cereal App;
+}
+
+@font-face {
+  font-family: Airbnb Cereal App;
+  font-weight: 300;
+  src: url("./assets/Fonts/AirbnbCerealApp-Light.ttf");
+}
+
+@font-face {
+  font-family: Airbnb Cereal App;
+  font-weight: 400;
+  src: url("./assets/Fonts/AirbnbCerealApp-Book.ttf");
+}
+
+@font-face {
+  font-family: Airbnb Cereal App;
+  font-weight: 500;
+  src: url("./assets/Fonts/AirbnbCerealApp-Medium.ttf");
+}
+
+@font-face {
+  font-family: Airbnb Cereal App;
+  font-weight: 700;
+  src: url("./assets/Fonts/AirbnbCerealApp-Bold.ttf");
+}
+
+@font-face {
+  font-family: Airbnb Cereal App;
+  font-weight: 800;
+  src: url("./assets/Fonts/AirbnbCerealApp-ExtraBold.ttf");
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
+}
+
+
+
+/* Global styles for light and dark themes */
+
+/* Default theme (light theme by default) */
+body {
+  background-color: white;
+  color: black;
+}
+
+body.light {
+  background-color: white;
+  color: black;
+}
+
+body.dark {
+  background-color: #1e1e1e; /* Dark background */
+  color: white; /* Light text color */
+}
