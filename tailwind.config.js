@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
@@ -27,13 +27,8 @@ module.exports = {
     function ({ addUtilities }) {
       addUtilities({
         ".scrollbar-none": {
-          /* Hide scrollbar for Chrome, Safari, and Edge */
-          "&::-webkit-scrollbar": {
-            display: "none",
-          },
-          /* Hide scrollbar for Firefox */
+          "&::-webkit-scrollbar": { display: "none" },
           "scrollbar-width": "none",
-          /* Hide scrollbar for IE, Edge */
           "-ms-overflow-style": "none",
         },
       });
